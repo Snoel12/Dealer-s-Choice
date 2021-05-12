@@ -8,15 +8,43 @@ nav {
   display: flex;
   justify-content: space-around;
   font-size: 40px;
-  background-color: gold;
+  background-color: salmon;
   color: salmon;
 }
 #homebody {
   display: flex;
   justify-content: center;
-  background-color: gold;
+  background-color: indigo;
 }
 #homeh1 {
   display: flex;
   justify-content: center;
+}
+li {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+#userh1 {
+  display: flex;
+  justify-content: center;
+  font: 32px;
+}
+#sheet {
+  border: solid black 1px;
+}
+#sheet tr th {
+  border: black solid 1px;
+}
+#divy {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#h1 {
+  text-align: center;
+}
+.divz {
+  background-color: lightgreen;
+  height: 25 vh;
 }

@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
   <a href= '/' > Home </a>
   <a href ='/users'> Users </a>
   </nav>
-  <div>
+  <div class= 'divz'>
   <h1 id = 'homeh1'> The Avengers Initiative</h1>
   </div>
   
@@ -37,14 +37,15 @@ app.get("/users", (req, res) => {
     <html>
     <head>
         <title> The Avengers </title>
-        <link rel = "stylesheet" href ='./style.css'/>
+        <link rel = "stylesheet" type= 'text/css' href ='./style.css'/>
     </head>
     <body id ='homeBody'>
     <nav>
     <a href= '/' > Home </a>
     <a href ='/users'> Users </a>
     </nav>
-    <h1> The Avengers</h1>
+    <div class ='divz'>
+    <h1 id= 'userh1'> The Avengers</h1>
     <ul>
       ${supe
         .map(
@@ -52,7 +53,7 @@ app.get("/users", (req, res) => {
         )
         .join("")}  
     </ul>
-    
+    </div>
     </body>
     
     </html>
@@ -67,19 +68,19 @@ app.get("/users/:id", (req, res) => {
   const html = `<!DOCTYPE html>
       <html>
       <head>
-          <title> Captain America </title>
-          <link rel = "stylesheet" href ='./style.css'/>
+          <link rel ="stylesheet" type= 'text/css' href ='/style.css'/>
       </head>
-      <body id>
+      <body >
       <nav>
       <a href= '/' > Home </a>
       <a href ='/users'> Users </a>
       </nav>
-      <h1> ${superhero.alias} </h1>
-      <table> 
+      <div id='divy' class ='divz'>
+      <h1 id='h1'> ${superhero.alias} </h1>
+      <table id = 'sheet'> 
       <tr>
        <th> first name</th>
-       <th> first name</th>
+       <th> last name</th>
       </tr>
       <th> ${superhero.firstName} </th>
       <th> ${superhero.lastName} </th>
@@ -90,6 +91,7 @@ app.get("/users/:id", (req, res) => {
 
       
       </table>
+      </div>
       
       </body>
       
